@@ -8,6 +8,7 @@ wheels/
 
 # Virtual environments
 .venv
+textenv/
 
 # Git worktrees
 .worktrees/
