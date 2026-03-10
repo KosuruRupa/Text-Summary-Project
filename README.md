@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🤖 Flan-T5 Text Summarization — MLOps Project
 
 > Fine-tune `google/flan-t5-base` on the [SAMSum](https://huggingface.co/datasets/samsum) dialogue dataset, deploy a FastAPI inference API to AWS App Runner, and log every inference to W&B Weave.
