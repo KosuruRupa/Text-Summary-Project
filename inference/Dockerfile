@@ -21,7 +21,8 @@ ENV PYTHONUNBUFFERED=1 \
 # Copied before source so this heavy layer (torch + transformers ≈ 1 GB)
 # is only re-built when pyproject.toml or uv.lock changes, not on code edits.
 COPY pyproject.toml uv.lock ./
-RUN uv sync --frozen --no-dev --no-install-project
+# RUN uv sync --frozen --no-dev --no-install-project
+RUN uv sync --frozen --no-dev --no-install-project --no-cache
 
 # ── Layer 2: application source ──────────────────────────────────────────────
 # Invalidated only when inference/ changes; deps layer above stays cached.
